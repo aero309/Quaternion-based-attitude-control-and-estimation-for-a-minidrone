@@ -1,0 +1,52 @@
+c
+
+% Assuming logs.Time and logs.Data are already available
+time = logs.Time;  % Time from the logs
+quat_w = logs.Data(1,:);  % Quaternion w-component
+quat_x = logs.Data(2,:);  % Quaternion x-component
+quat_y = logs.Data(3,:);  % Quaternion y-component
+quat_z = logs.Data(4,:);  % Quaternion z-component
+
+Q = [quat_w; quat_x; quat_y; quat_z];
+
+labels = {'w', 'x', 'y', 'z'};
+
+% Create a figure with reduced size and no extra space
+figure('Position', [100, 100, 700, 500]);  % Adjusted figure size
+
+% Define subplot positions manually to remove extra space
+subplot_positions = [0.1 0.55 0.35 0.35;  % [left, bottom, width, height]
+                     0.55 0.55 0.35 0.35;
+                     0.1 0.1 0.35 0.35;
+                     0.55 0.1 0.35 0.35];
+
+% Loop through each quaternion component
+for i = 1:4
+    subplot('Position', subplot_positions(i,:));  % Set custom position for each subplot
+    
+    % Plot quaternion components
+    plot(time, Q(i,:), '-', 'LineWidth', 1.5, 'Color', [0.2 0.6 0.8]);  % Solid line with custom color
+    
+    % Title with larger font
+    title(labels{i}, 'FontSize', 12, 'FontWeight', 'bold');
+    
+    % Set y-axis limits based on the component min and max with some buffer
+    ymin = min(Q(i,:)) - 0.1;  % Adding a small buffer
+    ymax = max(Q(i,:)) + 0.1;  % Adding a small buffer
+    ylim([ymin, ymax]);
+    
+    % Axis labels with larger font
+    xlabel('Time', 'FontSize', 10);
+    ylabel('Value', 'FontSize', 10);
+    
+    % Add legend for each subplot
+    legend(labels{i}, 'Location', 'best', 'FontSize', 9, 'Box', 'off');
+    axis tight;  % This removes any unnecessary padding around the data points
+    % Enable grid for better readability
+    grid on;
+end
+
+
+% Adjust figure and subplot positioning to remove extra space
+set(gcf, 'Color', 'w');  % White background
+
