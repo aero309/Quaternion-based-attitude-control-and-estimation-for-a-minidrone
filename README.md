@@ -17,6 +17,12 @@ This repository contains our implementation of altitude and quaternion-based att
 
 `RollFlip-Final`, `BackFlip-Final` and `Position_SMC` contain each `parrotMinidroneHover.prj` openable by MATLAB R2024b interface.
 
+## Setup
+
+1. Run parrotMinidroneHover.prj in either `RollFlip-Final`, `BackFlip-Final` or `Position_SMC`.
+2. Run the simulation
+3. Watch the magic
+
 ## References
 
 - [1] Asmaa Taame, Ibtissam Lachkar, Abdelmajid Abouloifa, Ismail Mouchrif.  
