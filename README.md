@@ -3,6 +3,10 @@
 This project implements a Sliding Mode Control strategy for attitude and altitude stabilization, as well as trajectory tracking, of a Parrot Minidrone in Simulink. Extended Kalman Filters are used to provide accurate state estimation from the sensor data. Using quaternion-based representation, the controller avoids singularities at high angles and ensures accurate
 3D orientations. A nonlinear algorithm enhances robustness against model uncertainties and disturbances. A set of simulation results shows adequate orientation stabilization in uncertain environments, validating the Sliding Mode Control approach.
 
+## Video presentation
+
+Link: https://www.youtube.com/watch?v=z0z447DR1LI
+
 ## Content
 
 This repository contains our implementation of altitude and quaternion-based attitude sliding mode control, along with the logic for executing a flip maneuver. Additionally, we explored a quaternion-based position controller in a separate workspace.
