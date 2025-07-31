@@ -3,11 +3,11 @@
 This project implements a Sliding Mode Control strategy for attitude and altitude stabilization, as well as trajectory tracking, of a Parrot Minidrone in Simulink. Extended Kalman Filters are used to provide accurate state estimation from the sensor data. Using quaternion-based representation, the controller avoids singularities at high angles and ensures accurate
 3D orientations. A nonlinear algorithm enhances robustness against model uncertainties and disturbances. A set of simulation results shows adequate orientation stabilization in uncertain environments, validating the Sliding Mode Control approach.
 
-This project is supervised by Prof. Josie Hughes (EPFL) and MathWorks.
+This project is supervised by Prof. [Josie Hughes (EPFL)](https://people.epfl.ch/josie.hughes?lang=en) and MathWorks.
 
 ## Video presentation
 
-Link: https://www.youtube.com/watch?v=z0z447DR1LI
+[Click here](https://youtu.be/z0z447DR1LI)
 
 ## Content
 
