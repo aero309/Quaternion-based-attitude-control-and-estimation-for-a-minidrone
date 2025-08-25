@@ -11,17 +11,7 @@ This project is supervised by Prof. [Josie Hughes (EPFL)](https://people.epfl.ch
 
 ## Content
 
-This repository contains our implementation of altitude and quaternion-based attitude sliding mode control, along with the logic for executing a flip maneuver. Additionally, we explored a quaternion-based position controller in a separate workspace.
-
-## Structure
-
-`RollFlip-Final` simulates the flip maneuver about the x-axis.
-
-`BackFlip-Final` simulates the flip maneuver about the y-axis.
-
-`Position_SMC` contains the implementation of the quaternion-based position controller[2].
-
-`RollFlip-Final`, `BackFlip-Final` and `Position_SMC` contain each `parrotMinidroneHover.prj` openable by MATLAB R2024b interface.
+This repository contains our implementation of altitude and quaternion-based attitude sliding mode control, along with the logic for executing a flip maneuver. Additionally, we explored a quaternion-based position controller in a separate workspace (STILL EXPERIMENTAL).
 
 ## Setup
 
