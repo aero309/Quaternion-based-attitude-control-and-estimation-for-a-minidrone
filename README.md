@@ -25,9 +25,10 @@ This repository contains our implementation of altitude and quaternion-based att
 
 ## Setup
 
-1. Run parrotMinidroneHover.prj in either `RollFlip-Final`, `BackFlip-Final` or `Position_SMC`.
-2. Run the simulation
-3. Watch the magic
+1. Run parrotMinidroneHover.prj in `model`.
+2. Follow the instructions in the Simulink panel
+3. Run the simulation
+4. Watch the magic
 
 ## References
 
